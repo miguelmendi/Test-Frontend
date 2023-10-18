@@ -7,8 +7,10 @@ form.addEventListener("submit", (event) =>{
   const monthlyPayment = document.getElementById("monthlyPayment").value
   const time = document.getElementById("time").value
 
-  const expr = (monthlyPayment * (((1 + 0.00517) ^ time - 1) / 0.00517)).toFixed(2)
+  const expr = monthlyPayment * (((1 + 0.00517) ^ time - 1) / 0.00517).toFixed(2)
 
   const value = document.querySelector(".value")
   document.querySelector(".infos").classList.remove("hidden")
+
+  value.textContent = `Olá ${name}, juntando R$${monthlyPayment} você terá R$${expr} em ${time} meses`
 })
