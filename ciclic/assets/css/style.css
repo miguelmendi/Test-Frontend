@@ -35,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 400px;
 }
 
 .title {
@@ -98,12 +99,26 @@ body {
   cursor: pointer;
 }
 
+.reset {
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #16a34a;
+  color: #f8fafc;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+  max-width: 100%;
+  padding: 10px;
+}
+
 .result {
   display: flex;
   gap: 2rem;
   align-items: center;
   border-top: 1px solid #ffffff34;
   padding: 0.75 0;
+  flex-direction: column;
 }
 
 .tmi {
